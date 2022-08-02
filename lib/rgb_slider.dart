@@ -46,6 +46,9 @@ class _rgbPageState extends State<rgbPage> {
             Slider(
                 min: 0,
                 max: 255,
+                activeColor: Colors.red,
+                inactiveColor: Colors.red.shade100,
+                thumbColor: Colors.red.shade300,
                 value: red.toDouble(),
                 onChanged: (value) {
                   red = value.toInt();
@@ -55,6 +58,9 @@ class _rgbPageState extends State<rgbPage> {
             Slider(
                 min: 0,
                 max: 255,
+                activeColor: Colors.green,
+                inactiveColor: Colors.green.shade100,
+                thumbColor: Colors.green.shade300,
                 value: green.toDouble(),
                 onChanged: (value) {
                   green = value.toInt();
@@ -64,6 +70,9 @@ class _rgbPageState extends State<rgbPage> {
             Slider(
                 min: 0,
                 max: 255,
+                activeColor: Colors.blue,
+                inactiveColor: Colors.blue.shade100,
+                thumbColor: Colors.blue.shade300,
                 value: blue.toDouble(),
                 onChanged: (value) {
                   blue = value.toInt();
@@ -76,7 +85,9 @@ class _rgbPageState extends State<rgbPage> {
                   color: Colors.pink,
                   fontSize: 18,
                   fontWeight: FontWeight.bold),
+                  
             ),
+
             Container(
               margin: EdgeInsets.all(100.0),
               width: 200,
